@@ -38,9 +38,13 @@ function NavBar ({ topics }) {
 
   return (
     <div className='Nav'>
-      <ul>
-        {mapped_topics}
-      </ul>
+      <div id='page_nav'>
+        <ul>
+          {mapped_topics}
+        </ul>
+      </div>
+      <div id='links'>
+      </div>
     </div>
   )
 }
