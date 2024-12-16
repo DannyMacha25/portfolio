@@ -1,34 +1,57 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import data from'./assets/data.json'
+import './App.css';
+
+import ProfessionalExperience from './WorkExperience'
+import PersonalProjects from './PersonalProjects'
+
+function Information ({ info }){
+  return  (
+    <div className="Section" id="information">
+      <h1>{info.name}</h1>
+      <p>{info.title}</p>
+      <p>{info.school} : {info.degree}</p>
+    </div>
+  )
+}
+
+function NavBar ({ topics }) {
+  const mapped_topics = topics.map((t) => 
+    <li><a href={t.id}>{t.name}</a></li>
+  )
+
+  return (
+    <div className='Nav'>
+      <ul>
+        {mapped_topics}
+      </ul>
+    </div>
+  )
+}
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const nav_bar_topics = [
+    {
+      "name" : "Information",
+      "id" : "#information"
+    },
+    {
+      "name" : "Experience",
+      "id" : "#professional_experience"
+    },
+    {
+      "name" : "Projects",
+      "id" : "#personal_projects"
+    }
+  ]
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="parent">
+        <NavBar topics={nav_bar_topics}/>
+        <Information info = {data.info}/>
+        <ProfessionalExperience experiences={data.experience}/>
+        <PersonalProjects projects={data.projects}/>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
   )
 }
 

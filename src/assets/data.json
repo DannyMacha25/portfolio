@@ -1,0 +1,72 @@
+{
+    "info" : {
+        "name" : "Danny Machado",
+        "school" : "University of Massachusetts Lowell",
+        "title" : "Software Engineer",
+        "degree" : "Computer Science Sept 2021 - May 2025"
+    },
+
+    "experience" : [
+        {
+            "company" : "Watts Water Technologies",
+            "title" : "Research & Technology Co-Op (Python Engineer/Developer)",
+            "date_start" : "Jan 2024",
+            "date_end" : "",
+            "details" : [
+                "Engineered and developed a generalized application in Python for labeling field data for algorithm and ML development. Used OOP principles to allow modularity.",
+                "Re-engineered a poor performing algorithm written in Python by re-defining the process, using different calculations with NumPy and Pandas and utilizing hyper optimization. New algorithm performs 50% better.",
+                "Designed and began executing a plan to port an algorithm from Python to C allowing it to be ran on an embedded chip.",
+                "Developed and maintained jobs in Databricks using Python and SQL to gather metrics from customer data.",
+                "Collaborated with engineers to produce a dashboard which displays live data from lab tests in a Python environment that improved productivity by 75%."
+            ]
+        },
+        {
+            "company" : "Umass Lowell Nerve Center",
+            "title" : "Robotics Lab Assistant (C# Developer)",
+            "date_start" : "Jun 2022",
+            "date_end" : "Jan 2024",
+            "details" : [
+                "Collaborated with a team of four developers using C++ and C# to research human robot interaction.",
+                "Designed a cockpit-styled control interface in VR with Unity that controlled a mobile arm robot. When a button is pressed in VR a movement command would be sent to the robot through the ROS network.",
+                "Engineered a software solution in Unity that let users import models of buildings and annotate them with either 2D controls using a drawing tablet or with a VR headset and controllers.",
+                "Developed a GUI used to switch tools and the colors of the pen for the annotation program. The GUI and annotation software was used to annotate scanned models of buildings for research purposes."
+            ]
+        }
+    ],
+
+    "projects" : [
+        {
+            "title" : "Ebay Listing Web App",
+            "skills" : [
+                "Python",
+                "AWS",
+                "React",
+                "CI/CD"
+            ],
+            "date" : "Sept 2024",
+            "description" : "This was a project a friend of mine, Ryan Maradiaga, and I worked on for our final project in our Cloud Comptuing course. Since we both use EBay a lot, we wanted to work with the eBay API as part of our project.",
+            "details" : [
+                "Automated deployment of a React web application and back-end API using CodePipeline and CodeDeploy.",
+                "Designed and automated the deployment of a CloudFormation stack using CDK in Python.",
+                "Utilized AWS Lambda to act as an API for refining Ebay query results."
+            ]
+        },
+        {
+            "title" : "Home IOT Temperature Sensor",
+            "skills" : [
+                "Python",
+                "C#",
+                "SQL",
+                "Micro Controllers"
+            ],
+            "date" : "Jan 2024",
+            "description" : "I always love a project that involves micro controllers and real life interaction, so I wanted to make a smart home temperature monitoring system for my house.",
+            "details" : [
+                "Developed an IOT temperature sensor to track room temperature which uses a Pi Pico board, temperature sensor module, and custom PCB.",
+                "Integrated a SQL database to hold temperature data in the back-end using a custom server hosted locally.",
+                "Designed a server in C# that uses socket connections to receive data from the Pico boards. The server runs one thread waiting for connections, then creates new asynchronous threads whenever it finds a new connection.",
+                "Micro Python was used on the Pico board to read the data from the sensor and deliver the data in a payload to the server."
+            ]
+        }
+    ]
+}
