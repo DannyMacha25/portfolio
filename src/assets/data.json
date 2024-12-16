@@ -1,9 +1,14 @@
 {
     "info" : {
         "name" : "Danny Machado",
-        "school" : "University of Massachusetts Lowell",
-        "title" : "Software Engineer",
-        "degree" : "Computer Science Sept 2021 - May 2025"
+        "education" : {
+            "school" : "University of Massachusetts Lowell",
+            "degree" : "B.S. Computer Science",
+            "start" : "Sept 2021",
+            "end" : "May 2025",
+            "gpa" : 3.9
+        },
+        "title" : "Software Engineer"
     },
 
     "experience" : [
