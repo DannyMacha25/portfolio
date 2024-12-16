@@ -5,7 +5,7 @@
     --sub-color-3: #88527F;
     --sub-color-4: #1A5E63;
 
-    color-scheme: light dark;
+    color: white;
     background-color: var(--main-bg-color);
 
 }
