@@ -2,7 +2,7 @@ import { useState } from 'react'
 import data from'./assets/data.json'
 import './App.css';
 import li_logo from './assets/images/In-White-72.png'
-import gh_logo from './assets/images/github-mark-white.png'
+import gh_logo_w from './assets/images/github-mark-white.png'
 
 import ProfessionalExperience from './WorkExperience'
 import PersonalProjects from './PersonalProjects'
@@ -12,10 +12,6 @@ function Information ({ info }){
     <div className="Section" id="information">
       <h1 id='name'>{info.name}</h1>
       <p id='title'>{info.title}</p>
-      <div id='links'>
-        <a href="https://www.linkedin.com/in/danny-machado-387468237/"><img src={li_logo}/></a>
-        <a href="https://github.com/DannyMacha25"><img src={gh_logo}/></a>
-      </div>
       <div id='education'>
         <div id='school_info'>
           <p id='school_name'><b>{info.education.school}</b></p>
@@ -33,7 +29,7 @@ function Information ({ info }){
 
 function NavBar ({ topics }) {
   const mapped_topics = topics.map((t) => 
-    <li><a href={t.id}>{t.name}</a></li>
+    <li><a className='TextLink' href={t.id}>{t.name}</a></li>
   )
 
   return (
@@ -41,6 +37,10 @@ function NavBar ({ topics }) {
       <div id='page_nav'>
         <ul>
           {mapped_topics}
+          <div id='logos'>
+            <li><a className='LogoLink' href="https://github.com/DannyMacha25"><img src={gh_logo_w}/></a></li>
+            <li><a className='LogoLink' href="https://www.linkedin.com/in/danny-machado-387468237/"><img src={li_logo}/></a></li>
+          </div>
         </ul>
       </div>
       <div id='links'>
