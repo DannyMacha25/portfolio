@@ -5,13 +5,22 @@ function WorkExperience ({ experience }) {
     }
   
     // Map all of the details into a list
-    const details = experience.details.map((item) => <ul>{item}</ul>)
+
   
     return (
       <div className="WorkExperience">
-        <h2>{experience.company}</h2>
-        <i>{experience.date_start} - {end}</i>
-        <p>{details}</p>
+        <div className='WorkTopLine'>
+          <h2 className='WorkCompany'>{experience.company}</h2>
+          <i className='WorkDate'>{experience.date_start} - {end}</i>
+        </div>
+        <div className='WorkBody'>
+          <div className='WorkSecondLine'>
+            <h3 className='WorkTitle'>{experience.title}</h3>
+            <i className='WorkLocation'>{experience.location}</i>
+          </div>
+          <p className='WorkDescription'>{experience.description}</p>
+        </div>
+
       </div>
     )
 }

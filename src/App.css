@@ -17,13 +17,14 @@ div{
   border-color: var(--sub-color-1);
 
   font-size: large;
+  transition: all 1s;
 }
 
-#information{
-  text-align: center;
-  font-size: larger;
+.Section:hover {
+  border-color: var(--sub-color-2);
+  border-radius: 75px;
 }
-
+/* Navigation */
 .Nav{ /* Top nav bar, is persistent as you scroll*/
   overflow: hidden;
   position: sticky;
@@ -96,6 +97,18 @@ div{
   background-color: var(--main-bg-color);
 }
 
+/* Section Specific stff */
+.Section h1 {
+  text-align: center;
+}
+
+/* About me */
+
+#information{
+  text-align: center;
+  font-size: larger;
+}
+
 #education div{
   
   float:left;
@@ -145,3 +158,35 @@ div{
 #title {
   margin: 0px 0px 10px 0px;
 }
+
+/* Code for the Employment Section*/
+.WorkTopLine *{
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.WorkSecondLine *{
+  display: inline-block;
+}
+.WorkTitle {
+  margin-top: auto;
+}
+.WorkLocation {
+  float: right;
+}
+.WorkCompany {
+  margin-top: auto;
+}
+.WorkDate {
+  float: right;
+}
+
+.WorkBody {
+  margin-top: 0;
+  margin-left: 2%;
+}
+
+.WorkDescription {
+  margin-top: 1%;
+}
+/* Personal Projects Section*/

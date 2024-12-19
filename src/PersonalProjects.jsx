@@ -1,6 +1,5 @@
 function Project ({ project }) {
     // Map all of the details into a list
-    const details = project.details.map((item) => <ul>{item}</ul>)
     const skills = project.skills.map((skill) => <ul>{skill}</ul>)
     return (
       <div className="Project">
@@ -8,7 +7,6 @@ function Project ({ project }) {
         <p>{project.date}</p>
         <i>{skills}</i>
         <p>{project.description}</p>
-        <p>{details}</p>
       </div>
     )
 }
