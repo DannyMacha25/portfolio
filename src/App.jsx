@@ -1,8 +1,10 @@
 import { useState } from 'react'
 import data from'./assets/data.json'
 import './App.css';
-import li_logo from './assets/images/In-White-72.png'
-import gh_logo_w from './assets/images/github-mark-white.png'
+import {
+  Github,
+  LinkedIn
+} from './assets/images'
 
 import ProfessionalExperience from './WorkExperience'
 import PersonalProjects from './PersonalProjects'
@@ -38,8 +40,8 @@ function NavBar ({ topics }) {
         <ul>
           {mapped_topics}
           <div id='logos'>
-            <li><a className='LogoLink' href="https://github.com/DannyMacha25"><img src={gh_logo_w}/></a></li>
-            <li><a className='LogoLink' href="https://www.linkedin.com/in/danny-machado-387468237/"><img src={li_logo}/></a></li>
+            <li><a className='LogoLink' href="https://github.com/DannyMacha25"><img src={Github}/></a></li>
+            <li><a className='LogoLink' href="https://www.linkedin.com/in/danny-machado-387468237/"><img src={LinkedIn}/></a></li>
           </div>
         </ul>
       </div>

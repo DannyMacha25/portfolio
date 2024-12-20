@@ -40,7 +40,11 @@
                 "CI/CD"
             ],
             "date" : "Sept 2024",
-            "description" : "A webapp that aggregates IPod listings and classifies them for the user's convenience."
+            "description" : "A webapp that aggregates IPod listings and classifies them for the user's convenience.",
+            "images" : [
+                "assets/images/purple.png",
+                "assets/images/grey.png"
+            ]
 
         },
         {
@@ -52,7 +56,11 @@
                 "Micro Controllers"
             ],
             "date" : "Jan 2024",
-            "description" : "A custom built home temperature sensor that connects to a back-end server written in C#. Server allows for multiple connectons at once."
+            "description" : "A custom built home temperature sensor that connects to a back-end server written in C#. Server allows for multiple connectons at once.",
+            "images" : [
+                "/public/images/purple.png",
+                "/public/images/grey.png"
+            ]
         }
     ]
 }

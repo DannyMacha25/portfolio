@@ -17,7 +17,7 @@ div{
   border-color: var(--sub-color-1);
 
   font-size: large;
-  transition: all 1s;
+  transition: all .5s;
 }
 
 .Section:hover {
@@ -34,6 +34,7 @@ div{
   background-color: var(--sub-color-1);
   border-color: white;
   border: solid 2px;
+
 }
 
 .Nav ul{
@@ -175,7 +176,7 @@ div{
   float: right;
 }
 .WorkCompany {
-  margin-top: auto;
+  margin: auto;
 }
 .WorkDate {
   float: right;
@@ -190,3 +191,142 @@ div{
   margin-top: 1%;
 }
 /* Personal Projects Section*/
+
+.ProjectTitle{
+  margin: auto;
+}
+.ProjectTopLine *{
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.ProjectBody {
+  margin-top: 0;
+  margin-left: 2%;
+}
+
+.ProjectDate {
+  float: right;
+}
+
+.ProjectSkills ul {
+  padding: 0%;
+}
+
+.ProjectSkills li{
+  display: inline-block;
+  margin-right: .8%
+}
+
+.ProjectImageContainer {
+  overflow: hidden;
+  width: 50%;
+  height: 25%;
+  white-space: nowrap;
+  margin-left: 25%;
+  margin-right: 25%;
+  /*box-shadow: -10px 10px var(--main-bg-shadow);*/
+
+  display: grid;
+}
+
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(100%);
+    z-index: 1;
+  }
+  100% {
+    transform: translate(0%);
+    z-index: 1;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    z-index: 0;
+    transform: translateX(0%);
+  }
+  100% {
+    z-index: 0;
+    transform: translate(100%)
+  }
+}
+
+@keyframes slide-in-right {
+  0% {
+    z-index: 1;
+    transform: translateX(-100%);
+  }
+  100% {
+    z-index: 1;
+    transform: translate(0%)
+  }
+}
+
+.ProjectImage {
+  width: 100%;
+  height: 100%;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+.ProjectButton {
+  height: 100%;
+  width: 20%;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+  z-index: 2;
+  background-color: transparent;
+  border: none;
+
+}
+
+.ProjectImage[anim_state="2"] {
+  transform: translateX(100%);
+  animation: slide-in-left .4s forwards;
+}
+
+.ProjectImage[anim_state="3"] {
+  transform: translateX(-100%);
+  animation: slide-in-right .4s forwards;
+}
+
+.ProjectImage:hover {
+  scale: 1;
+}
+
+.ProjectImage[anim_state='1'] {
+  z-index: 0;
+}
+
+.ProjectButton:hover {
+  border: 4px solid;
+  border-color: white;
+  pointer-events: auto;
+}
+.Left {
+  transform: rotate(135deg);
+}
+
+.Right {
+  transform: rotate(-45deg);
+}
+
+.Arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;  
+}
+
+.ProjectButton:hover .Arrow{
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;  
+}
+
+#pb_right {
+  margin-left:80%
+  
+}
