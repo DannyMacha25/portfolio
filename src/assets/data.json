@@ -8,7 +8,8 @@
             "end" : "May 2025",
             "gpa" : 3.9
         },
-        "title" : "Software Engineer"
+        "title" : "Software Engineer",
+        "email" : "dannycunhamachado@gmail.com"
     },
 
     "experience" : [
@@ -32,6 +33,20 @@
 
     "projects" : [
         {
+            "title" : "My Portfolio Site",
+            "skills" : [
+                "React",
+                "CSS",
+                "HTML"
+            ],
+            "date" : "Dec 2024",
+            "description" : "The website you are currently seeing! After having spent a couple of months learning React and HTML on and off, I wanted to build a simple website to test and improve my newly learned skills. This is the outcome!",
+            "images" : [
+                "/public/images/purple.png",
+                "/public/images/grey.png"
+            ]
+        },
+        {
             "title" : "IPod Ebay Listing",
             "skills" : [
                 "Python",
@@ -42,8 +57,6 @@
             "date" : "Sept 2024",
             "description" : "A webapp that aggregates IPod listings and classifies them for the user's convenience.",
             "images" : [
-                "assets/images/purple.png",
-                "assets/images/grey.png"
             ]
 
         },
@@ -57,6 +70,45 @@
             ],
             "date" : "Jan 2024",
             "description" : "A custom built home temperature sensor that connects to a back-end server written in C#. Server allows for multiple connectons at once.",
+            "images" : [
+                "/public/images/purple.png",
+                "/public/images/grey.png"
+            ]
+        },
+        {
+            "title" : "Mock-Up Shop App",
+            "skills" : [
+                "Java",
+                "SQL",
+                "Android Studio"
+            ],
+            "date" : "Nov 2023",
+            "description" : "A mock-up store front app a team of four and I devloped. A user is able to edit their cart, browse and filter the catalog, and navigate between store pages.",
+            "images" : [
+                "/public/images/purple.png",
+                "/public/images/grey.png"
+            ]
+        },
+        {
+            "title" : "LED Matrix Smart Clock",
+            "skills" : [
+                "C++",
+                "Raspberry Pi"
+            ],
+            "date" : "Sept 2023",
+            "description" : "A fully customizable smart clock with placeable widgets. Users would be able to move, add, and remove widgets around the 64x32 matrix of LEDs. The wigets available were time and weather.",
+            "images" : [
+                "/public/images/purple.png",
+                "/public/images/grey.png"
+            ]
+        },
+        {
+            "title" : "Minesweeper Clone",
+            "skills" : [
+                "Python"
+            ],
+            "date" : "April 2023",
+            "description" : "A clone of Minesweeper made in Python using Pygame. It has 3 selectable difficulties that adjusts the size of the game and number of bombs.",
             "images" : [
                 "/public/images/purple.png",
                 "/public/images/grey.png"

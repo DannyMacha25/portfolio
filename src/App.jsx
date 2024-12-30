@@ -3,7 +3,8 @@ import data from'./assets/data.json'
 import './App.css';
 import {
   Github,
-  LinkedIn
+  LinkedIn,
+  Email
 } from './assets/images'
 
 import ProfessionalExperience from './WorkExperience'
@@ -42,6 +43,7 @@ function NavBar ({ topics }) {
           <div id='logos'>
             <li><a className='LogoLink' href="https://github.com/DannyMacha25"><img src={Github}/></a></li>
             <li><a className='LogoLink' href="https://www.linkedin.com/in/danny-machado-387468237/"><img src={LinkedIn}/></a></li>
+            <li><a className='LogoLink' href="mailto:dannycunhamachado@gmail.com"><img src={Email}/></a></li>
           </div>
         </ul>
       </div>

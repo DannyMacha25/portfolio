@@ -14,8 +14,9 @@ function Project ({ project }) {
     // Slider logic
     const [currentImg, setCurrentImg] = useState(0)
     const [prevImg, setPrevImg] = useState(0)
-    const [imgAnims, setImgAnims] = useState(new Array(img_arr.length).fill(0))
+    const [imgAnims, setImgAnims] = useState([2].concat(new Array(img_arr.length - 1).fill(1))) // NOTE: Fix img logic
 
+    
     // Edit anim Functions
     const updateAnimations = (idx, val) => {
       let currentAnims = imgAnims
