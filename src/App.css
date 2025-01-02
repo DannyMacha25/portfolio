@@ -338,3 +338,147 @@ div{
   margin-left:80%
   
 }
+
+
+/* Mobile stuff */
+@media (max-width: 480px) {
+
+  /* About me */
+
+  #information{
+    text-align: center;
+    font-size: medium;
+  }
+
+  #education div{
+    
+    float:left;
+    padding: 0px 15px;
+  }
+
+  #education {
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: center;
+  }
+
+
+  #education p{
+    margin: 0;
+  }
+
+  #school_info {
+    width: 40%;
+  }
+
+  #school_dates {
+    float: left;
+    width: 40%;
+  }
+
+  /* Nav */
+  #logos {
+    width: auto;
+    height: auto;
+    padding-right: 0%;
+    display: flex;
+    justify-content: center;
+  }
+  #sections {
+    padding-left: 0%;
+    display: flex;
+    justify-content: center;
+  }
+  #page_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .Nav img{
+    width: 100%;
+    height: 50%;
+    filter: brightness(0%);
+  }
+  .TextLink {
+    padding: 10px 12px;
+    width: auto;
+    font-size: medium;
+  }
+
+  /* Work Experience */
+  #professional_experience {
+    font-size: medium;
+  }
+
+  #professional_experience ul {
+    padding-left: 0%;
+  }
+
+  .WorkExperience {
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 10%;
+  }
+
+  .WorkSecondLine{
+    display: inline-block;
+  }
+
+  .WorkDate {
+    float: left;
+  }
+
+  .WorkLocation {
+    float: left;
+  }
+
+  .WorkTitle{
+    margin-bottom: 0%;
+  }
+
+  .WorkTopLine {
+    display: inline-block;
+  }
+
+  /* Projects */
+  #personal_projects {
+    font-size: medium;
+  }
+
+  #personal_projects ul {
+    padding-left: 0%;
+  }
+
+  .Project {
+    width: 100%;
+    margin: 0%;
+    margin-bottom: 15%;
+  }
+
+  .ProjectTopLine{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8%;
+  }
+
+  .ProjectTitle{
+    float: left;
+    margin: 0%;
+  }
+
+  .ProjectDate {
+    float: none;
+  }
+
+  .ProjectSkills {
+    margin-top: 0%;
+  }
+
+  .ProjectImageContainer {
+    margin-left: 15%;
+    width: 70%
+  }
+}

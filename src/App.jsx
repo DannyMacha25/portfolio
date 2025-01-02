@@ -19,7 +19,7 @@ function Information ({ info }){
         <div id='school_info'>
           <p id='school_name'><b>{info.education.school}</b></p>
           <p id='degree'>{info.education.degree} </p>
-          <p>GPA: {info.education.gpa}</p>
+          <p id = 'gpa'>GPA: {info.education.gpa}</p>
         </div>
         <div id='school_dates'>
           <p>{info.education.start} - {info.education.end}</p>
@@ -39,7 +39,9 @@ function NavBar ({ topics }) {
     <div className='Nav'>
       <div id='page_nav'>
         <ul>
-          {mapped_topics}
+          <div id='sections'>
+            {mapped_topics}
+          </div>
           <div id='logos'>
             <li><a className='LogoLink' href="https://github.com/DannyMacha25"><img src={Github}/></a></li>
             <li><a className='LogoLink' href="https://www.linkedin.com/in/danny-machado-387468237/"><img src={LinkedIn}/></a></li>
